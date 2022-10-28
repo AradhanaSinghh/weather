@@ -1,5 +1,7 @@
 
+ //Providing a unique Api id frmo openWeatherApi 
  const apikey='2a38f731632e47217985a981626cb8e2';
+ //adding event to load the details of the place user lives by geological indicator
 window.addEventListener("load",()=>{
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition((position)=>{
@@ -20,10 +22,11 @@ window.addEventListener("load",()=>{
             })
         }
     })
-    
+    //searching by city -- User will enter the name of the city where the url will be fetched 
     function searchByCity(){
         var place= document.getElementById('input').value;
 
+        //if user has not mentioned any place then it will give alert to the user to enter the name of the city
         if(place.length==0){
             alert("please type in a city name");
         }
@@ -35,12 +38,13 @@ window.addEventListener("load",()=>{
             console.log(data);
             weatherReport(data);
         })
+
         console.log("urlsearchdata:" + urlsearch);
         document.getElementById('input').value='';
     }
 
-//    function 
-    
+//    function to check weeatherReport details ****
+
     function weatherReport(data){
     
         var urlcast= `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${apikey}`;
@@ -57,7 +61,7 @@ window.addEventListener("load",()=>{
             console.log(data.name,data.sys.country);
         
             console.log(Math.floor(data.main.temp-273));
-            document.getElementById('temperature').innerText= 'Temperature : '+ Math.floor(data.main.temp-273)+ ' °C'+ "\n "+'humidity:' +Math.floor(data.main.humidity)+'%'+'\n' + 'feels like:' +Math.floor(data.main.feels_like-273)+ ' °C'+ "\n ";
+            document.getElementById('temperature').innerText= 'Temperature : '+ Math.floor(data.main.temp-273)+ ' °C'+ "\n "+'humidity:' +Math.floor(data.main.humidity)+'%'+'\n' + 'feels like:' +Math.floor(data.main.feels_like-273)+ ' °C'+ "\n "+'wind:' +" " + Math.floor(data.wind.speed)+ " km/hr";
         
             document.getElementById('clouds').innerText= data.weather[0].description;
             console.log(data.weather[0].description)
@@ -78,8 +82,9 @@ window.addEventListener("load",()=>{
                                 $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
                             } 
             }
+        
     }
-    
+    //hour forecast is to update user within every 3hours
     function hourForecast(forecast){
         document.querySelector('.templist').innerHTML=''
         for (let i = 0; i < 8; i++) {
@@ -96,7 +101,13 @@ window.addEventListener("load",()=>{
     
             let temp= document.createElement('p');
             temp.innerText="temp: "+Math.floor((forecast.list[i].main.temp - 273))+ '°C '+", Max-temp/Min-temp "+" " + Math.floor((forecast.list[i].main.temp_max - 273))+ ' °C' + ' / ' + Math.floor((forecast.list[i].main.temp_min - 273))+ ' °C'+',' +" feels like :" + Math.floor((forecast.list[i].main.feels_like - 273))+ ' °C';
-    
+    //****Note****:-
+    // YOU MIGHT SEE WEATHER_MIN and WEATHER_MAX SAME FOR FEW PLACES
+    //reason:- temp_min and temp_max reflect deviations in measurement for the given city. If they are equal to temp then either all weather stations are perfect or there is just one for the whole city.
+    //temp_min refers to minimum temperature at the moment
+    //temp_max refers to maximum temperature at the moment
+    //for further details about the same refer :
+    //https://openweathermap.org/current#:~:text=main.temp_min%20Minimum%20temperature%20at,Maximum%20temperature%20at%20the%20moment.
             div.appendChild(time)
             div.appendChild(temp)
     
@@ -110,12 +121,14 @@ window.addEventListener("load",()=>{
             document.querySelector('.templist').appendChild(hourR);
 
     }
+    //prediction average of a day by hour
     const average1=((forecast.list[0].main.temp+forecast.list[1].main.temp+forecast.list[2].main.temp+forecast.list[3].main.temp+forecast.list[4].main.temp+forecast.list[5].main.temp+forecast.list[6].main.temp+forecast.list[7].main.temp))/8;
-            const weather_today_avg=document.getElementById("Average1");
-            weather_today_avg.innerText= 'Average of hourly prediction for today is: ' +Math.floor(average1-273)+ ' °C' ;
+            const weather_hourly_avg=document.getElementById("Average1");
+            weather_hourly_avg.innerText= 'Average of hourly prediction for today is: ' +Math.floor(average1-273)+ ' °C' ;
            
 }
 
+// 5 day prediction of weather 
     function dayForecast(forecast){
         document.querySelector('.weekF').innerHTML=''
         
@@ -139,7 +152,9 @@ window.addEventListener("load",()=>{
             div.appendChild(description);
             document.querySelector('.weekF').appendChild(div)
         }
+        //prediction average of a 5 day
         const average=((forecast.list[0].main.temp+forecast.list[1].main.temp+forecast.list[2].main.temp+forecast.list[3].main.temp+forecast.list[4].main.temp))/5;
             const weather_day_avg=document.getElementById("Average");
             weather_day_avg.innerText= 'Average of temperature for 5 days is: ' +Math.floor(average-273)+ ' °C' ;
+
     }
