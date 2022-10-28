@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- ***generating favicon*** -->
+    <link rel="icon" href="images\favicon1.ico" type="image/icon" sizes="16x16">
+    <!-- <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.theme.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WEATHER APP</h1>
+            <div>
+                <input type="text" name="" id="input" placeholder="Enter city name">
+                <button id="search" onclick="searchByCity()">Search</button>
+            </div>
+        </div>
+        <main>        
+            <div class="box">
+                <div class="weather">
+                    <h2 id="city">Delhi,IN</h2>
+                    <div class="temp-box">
+                        <img src="/weathericon1.png" alt="" id="img">
+
+                        <p id="temperature">26 °C</p>
+                    </div>
+                    <span id="clouds">Broken Clouds</span>
+                </div>
+            </div>
+            
+            <div class="divider1"></div>
+    
+            <div class="forecstH">
+                <p class="cast-header">Upcoming forecast</p>
+                <div class="templist">
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                    <div class="next">
+                        <div>
+                            <p class="time">8:30 PM</p>
+                            <p>29 °C / 29 °C</p>
+                        </div>
+                        <p class="desc">Light Rain</p>
+                    </div>
+    
+                </div>
+            </div>
+        </main>
+    
+        <div class="forecstD">
+            <div class="divider2"></div>
+            <p class="cast-header"> Next 5 days forecast</p>
+            <div class="weekF">
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 2022</p>
+                    <p>31 °C / 31 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 2022</p>
+                    <p>31 °C / 31 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 2022</p>
+                    <p>31 °C / 31 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+    
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 2022</p>
+                    <p>31 °C / 31 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+                <div class="dayF">
+                    <p class="date">Sun Jul 03 2022</p>
+                    <p>31 °C / 31 °C</p>
+                    <p class="desc">Overcast Clouds</p>
+                </div>
+               
+            </div>
+        </div>
+        <div id="Average">
+                    
+        </div>
+        <div id="Average1">
+                    
+        </div>
+    </div>
+    <!-- <script src="./jquery-3.6.1.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <!-- <script src="./jquery-ui-1.13.2/jquery-ui-1.13.2"></script> -->
+<script src="Script.js"></script>
+</body>
+</html>
+<!-- written by :- Aradhana Singh  -->

@@ -1,0 +1,201 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+html{
+    height: auto;
+    width: auto;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 0%;
+}
+h1{
+    text-align: center;
+}
+header::before{
+    background: linear-gradient(45deg,rgba(173, 197, 248, 0.717),rgba(238, 238, 238, 0.679)), url('/background.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+        
+}
+
+body{
+    background-color: rgb(218, 239, 247);
+   font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    margin: 2px 2px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: rgb(17, 19, 16);
+    text-decoration: underline;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 4px #b1349c;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#input{
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: rgb(0, 0, 0);
+    color:white;
+}
+#input::placeholder{
+    color:#b1349c;
+}
+#search{
+    background: none;
+    padding: 5px 20px;
+    color: aliceblue;
+    outline: none;
+    background: rgb(206, 27, 206);
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+
+}
+.weather{
+    text-align: center;
+    color: aliceblue;
+}
+.box{
+    animation-name: aradhana1;
+            animation-duration: 2s;
+            
+    background-color:lavender;
+            border: 2px solid rgb(214, 6, 145);
+            height: 350px;
+            width: 550px;
+            display: flex;
+            padding: 2rem;
+            margin: .1rem;
+            align-items: center;
+            border-radius: 8px;
+            justify-content: center;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 3px 3px 5px 2px rgb(221, 97, 180);
+            
+}
+.box:hover{
+             transform: rotate(360deg);
+            background-color:beige;
+}
+#city{
+    font-size: 30px;
+    color:blueviolet;
+}
+.weather img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+}
+
+#temperature{
+    font-size: 18px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+.temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#clouds{
+    font-size: 20px;
+    background: rgba(190, 8, 93, 0.778);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+main{
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 0 50px;
+    color: rgb(22, 18, 18);
+    display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.next{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.next p,.next h3{
+    margin: 3px 0;
+}
+.forecstD{
+    margin: 20px 50px;
+    color: rgb(7, 8, 8);
+}
+.weekF{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cast-header{
+    color: rgb(8, 11, 14);
+    text-decoration:underline;
+    background: rgba(240, 228, 239, 0.539);
+    width: max-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border:2px solid rgb(240, 1, 41);
+}
+.divider1,.divider2{
+    background: rgba(200, 200, 132, 0.539);
+    height: 200px;
+    border-radius:2px;
+}
+.divider2{
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+}
+.time,.date{
+    color: rgb(221, 9, 133);
+}
+.desc{
+    color: rgb(192, 13, 228);
+}
+#Average{
+    color:black;
+    background-color: #4788dd;
+}
+#Average1{
+    color:black;
+    background-color: #c860d1;
+}
+.templist{ 
+ width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
