@@ -68,17 +68,16 @@ window.addEventListener("load",()=>{
 
         })
         var backgroundImage = chooseImage(data.main.temp-273);
-        $("body").css("background", "url(" + backgroundImage + ")");
+
 
         // chooseImage() definition
                           function chooseImage(temp) {
-                         if (temp > 15) {
-                         return 'bg50.jpg';
-                               }
-                        if (temp < 15) {
-                          return 'bg20.jpg';
+                            if (temp >= 15) {
+                                $("body").css("background-image", "url(https://images.unsplash.com/photo-1605184861755-8f190fea96a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=383&q=80)");
+                            } else if (temp <15) {
+                                $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
+                            } 
             }
-        }
     }
     
     function hourForecast(forecast){
