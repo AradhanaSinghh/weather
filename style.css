@@ -90,10 +90,7 @@ body{
     text-align: center;
     color: aliceblue;
 }
-.box{
-    animation-name: aradhana1;
-            animation-duration: 2s;
-            
+.box{           
     background-color:lavender;
             border: 2px solid rgb(214, 6, 145);
             height: 350px;
