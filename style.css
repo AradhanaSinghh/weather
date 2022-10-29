@@ -178,6 +178,9 @@ summary{
     cursor:pointer;
 }
 
+.cast-header:hover{
+    background-color: rgb(199, 233, 120);
+}
 .time,.date{
     color: rgb(221, 9, 133);
 }
