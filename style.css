@@ -11,7 +11,7 @@ html{
 h1{
     display: flex;
     justify-content: center;
-    background-color: rgba(172, 78, 209, 0.822);
+    background-color: black;
     
 }
 header::before{
@@ -38,13 +38,9 @@ body{
 }
 
 .header h1{
-    color: rgb(0, 0, 0);
+    color: lavender;
     text-decoration: underline;
-    font-family: sans-serif;
-    display: flex;
-    text-align:center;
-    justify-content: center;
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #input{
     font-size: 18px;
