@@ -33,11 +33,6 @@ body{
     background-position: center;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .header h1{
     color: rgb(17, 19, 16);
     text-decoration: underline;
