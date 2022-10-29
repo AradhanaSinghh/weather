@@ -86,7 +86,7 @@ window.addEventListener("load",()=>{
                          else if (temp == "thunderstorm") {
                             $("body").css("background-image", "url(https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80)")
                         } 
-                           else if (temp == "thunderstorm with light rain" || temp== "scattered clouds" || temp=="light rain"||temp == "shower rain"|| temp=="rain"||temp="heavy intensity shower rain") {
+                           else if (temp == "thunderstorm with light rain" || temp== "scattered clouds" || temp=="light rain"||temp == "shower rain"|| temp=="rain"||temp=="heavy intensity shower rain") {
                             $("body").css("background-image", "url(https://images.unsplash.com/photo-1512511708753-3150cd2ec8ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)")
                         } 
                            else if(temp == "snow" || temp=="light snow" ||temp=="Heavy snow"||temp=="light shower snow"||temp=="Light rain and snow"||temp=="Heavy shower snow"){
