@@ -209,10 +209,10 @@ main{
 .next:hover{
     background-color: lavender;
 }
-.footer #Average:hover{
+.section #Average:hover{
     background-color: beige;
 }
-.footer #Average1:hover{
+.section #Average1:hover{
     background-color: beige;
 }
 .container{
@@ -224,10 +224,10 @@ main{
    
 
 }
-.footer p{
+.section p{
     background-color: beige;
 }
-.footer a:hover{
+.section a:hover{
     color: rgb(86, 26, 228);
     cursor:pointer;
 }
