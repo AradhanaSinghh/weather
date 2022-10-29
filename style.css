@@ -9,9 +9,12 @@ html{
     margin-top: 0%;
 }
 h1{
-  display: flex;
+    display: flex;
     justify-content: center;
-    background-color: black;
+    background-color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(223, 203, 247);
+    text-decoration: underline;
     
 }
 header::before{
@@ -37,10 +40,6 @@ body{
     background-position: fixed;
 }
 
-.header h1{
-    color: white;
-    font-family: sans-serif;
-}
 #input{
     font-size: 18px;
     padding: 5px 10px;
