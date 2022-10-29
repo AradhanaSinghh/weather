@@ -13,8 +13,18 @@ html{
 h1{
     text-align: center;
 }
+body{
+    min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        transition: 500ms;
+        opacity:1;
+}
 header::before{
-    background: linear-gradient(45deg,rgba(173, 197, 248, 0.717),rgba(238, 238, 238, 0.679)), url('/background.jpg') no-repeat center center/cover;
+    background: linear-gradient(45deg,rgba(123, 141, 182, 0.717),rgba(238, 238, 238, 0.679)), url('/background.jpg') no-repeat center center/cover;
     content: "";
     position: absolute;
     top:0;
@@ -24,6 +34,7 @@ header::before{
     z-index: -1;
         
 }
+
 
 body{
     background-color: rgb(218, 239, 247);
@@ -57,6 +68,7 @@ body{
     border-radius: 15px;
     background: rgb(0, 0, 0);
     color:white;
+
 }
 #input::placeholder{
     color:#b1349c;
@@ -71,6 +83,7 @@ body{
     border-radius: 15px;
     cursor: pointer;
     border: none;
+
 
 }
 .weather{
@@ -166,7 +179,7 @@ main{
     border-radius: 20px;
     font-size: 18px;
     margin-bottom: 5px;
-    border:2px solid rgb(240, 1, 41);
+    border:2px solid rgb(0, 0, 0);
 }
 .divider1,.divider2{
     background: rgba(200, 200, 132, 0.539);
@@ -192,6 +205,7 @@ main{
     color:black;
     background-color: #c860d1;
 }
+
 .templist{ 
  width: 400px;
   height: 400px;
