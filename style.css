@@ -9,9 +9,9 @@ html{
     margin-top: 0%;
 }
 h1{
-    display: flex;
+  display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgba(172, 78, 209, 0.822);
     
 }
 header::before{
@@ -38,9 +38,9 @@ body{
 }
 
 .header h1{
-    color: lavender;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
 }
 #input{
     font-size: 18px;
