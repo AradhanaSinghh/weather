@@ -80,30 +80,23 @@ window.addEventListener("load",()=>{
                            if (temp == "clear sky") {
                                $("body").css("background-image", "url(https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)");
                            } 
-                           else if (temp == "broken clouds" ) {
+                           else if (temp == "broken clouds" || temp== "overcast clouds" || temp == "mist" ||temp=="few clouds" || temp=="haze") {
                                $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
                            }
-                            else if (temp == "overcast clouds") {
-                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
+                         else if (temp == "thunderstorm") {
+                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80)")
                         } 
-                         else if (temp == "shower rain") {
+                           else if (temp == "thunderstorm with light rain" || temp== "scattered clouds" || temp=="light rain"||temp == "shower rain"|| temp=="rain"||temp="heavy intensity shower rain") {
                             $("body").css("background-image", "url(https://images.unsplash.com/photo-1512511708753-3150cd2ec8ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)")
                         } 
-                           else if (temp == "mist") {
-                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
-                        } 
-                           else if (temp == "thunderstorm") {
-                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1512511708753-3150cd2ec8ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)")
-                        } 
-                           else if (temp == "scattered clouds") {
-                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1512511708753-3150cd2ec8ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80)")
-                        } 
-                           else if (temp == "few clouds") {
-                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
-                        } 
-                           else if (temp == "snow") {
+                           else if(temp == "snow" || temp=="light snow" ||temp=="Heavy snow"||temp=="light shower snow"||temp=="Light rain and snow"||temp=="Heavy shower snow"){
                             $("body").css("background-image", "url(https://images.unsplash.com/photo-1542692576-0eb0bd11a968?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80)")
-                        } 
+                         }
+                           else if(temp=="fog"){
+                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1516410529446-2c777cb7366d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
+                        } else{
+                            $("body").css("background-image", "url(https://images.unsplash.com/photo-1546538743-50202de912e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80)")
+                        }
            }
        
    }
