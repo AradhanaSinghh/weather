@@ -15,11 +15,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>WEATHER APP</h1>
-            <div>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <span class="navbar-brand mb-0 h1"><h1><img src="images\favicon1.ico" type="image/icon" width="30" height="20">WEATHER APP</h1></span>
+                </div>
+              </nav>
                 <input type="text" name="" id="input" placeholder="Enter city name">
                 <button id="search" onclick="searchByCity()">Search</button>
-            </div>
+
         </div>
         <main>        
             <div class="box">
@@ -34,10 +37,9 @@
                 </div>
             </div>
             
-            <div class="divider1"></div>
-    
             <div class="forecstH">
-                <p class="cast-header">Upcoming forecast</p>
+                <p class="cast-header">Upcoming forecast🌞</p>
+                <div class="panel1">
                 <div class="templist">
     
                     <div class="next">
@@ -79,16 +81,14 @@
                         </div>
                         <p class="desc">Light Rain</p>
                     </div>
-    
+                    </div>
                 </div>
             </div>
-        </main>
+        
     
         <div class="forecstD">
-            <div class="divider2"></div>
-            <p class="cast-header"> Next 5 days forecast</p>
+            <p class="cast-header"> Next 5 days forecast⛅</p>
             <div class="weekF">
-    
                 <div class="dayF">
                     <p class="date">Sun Jul 03 2022</p>
                     <p>31 °C / 31 °C</p>
@@ -117,21 +117,36 @@
                     <p>31 °C / 31 °C</p>
                     <p class="desc">Overcast Clouds</p>
                 </div>
-               
-            </div>
+    
+            
         </div>
-        <div id="Average">
-                    
         </div>
-        <div id="Average1">
+        <div class="footer">
+            <details>
+                <summary class="cast-header"> Average </summary>
+                <div id="Average">
                     
+                </div>
+                <div id="Average1">
+                            
+                </div>
+
+            </details>
+
+            <details>
+                <summary class="cast-header"> More Information 🌤 </summary>
+                <p><a href="https://www.msn.com/en-us/weather/forecast/" target="_blank">For more weather details 🌤</a></p>
+            </details>
         </div>
     </div>
+</main>
+</div>
     <!-- <script src="./jquery-3.6.1.js"></script> -->
     <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <!-- <script src="./jquery-ui-1.13.2/jquery-ui-1.13.2"></script> -->
 <script src="Script.js"></script>
 </body>
