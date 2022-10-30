@@ -14,17 +14,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header>
             <nav class="navbar bg-light">
                 <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1"><h1><img src="images\favicon1.ico" type="image/icon" width="30" height="30 "> WEATHER APP </h1></span>
+                  <span class="navbar-brand mb-0 h1"><h1><img src="images\favicon1.ico" type="image/icon" width="30" height="30 "> WEATHER APP </h1></span>
                 </div>
               </nav>
                 <input type="text" name="" id="input" placeholder="Enter city name">
                 <button id="search" onclick="searchByCity()">Search</button>
-
-        </div>
+            </header>
         <main>        
+            <section>
             <div class="box">
                 <div class="weather">
                     <h2 id="city">Delhi,IN</h2>
@@ -36,24 +36,8 @@
                     <span id="clouds">Broken Clouds</span>
                 </div>
             </div>
-        
-            <div class="section">
-                <details>
-                    <summary class="cast-header"> Average </summary>
-                    <div id="Average">
-                        
-                    </div>
-                    <div id="Average1">
-                                
-                    </div>
-    
-                </details>
-    
-                <details>
-                    <summary class="cast-header"> More Information 🌤 </summary>
-                    <p><a href="https://www.msn.com/en-us/weather/forecast/" target="_blank">See more!</a></p>
-                </details>
-            </div>
+        </section>
+        <article>
             <div class="forecstH">
                 <p class="cast-header">Upcoming forecast🌞</p>
                 <div class="templist">
@@ -99,8 +83,8 @@
                     </div>
                 </div>
             </div>
-        
-    
+        </article>
+        <aside>
         <div class="forecstD">
             <p class="cast-header"> Next 5 days forecast⛅</p>
             <div class="weekF">
@@ -135,6 +119,24 @@
     
             
         </div>
+        </div>
+    </aside>
+        <div class="footer">
+            <details>
+                <summary class="cast-header"> Average </summary>
+                <div id="Average">
+                    
+                </div>
+                <div id="Average1">
+                            
+                </div>
+
+            </details>
+
+            <details>
+                <summary class="cast-header"> More Information 🌤 </summary>
+                <p><a href="https://www.msn.com/en-us/weather/forecast/" target="_blank">See more!</a></p>
+            </details>
         </div>
         
 </main>
