@@ -172,8 +172,8 @@ summary{
 }
 
 #Average1{
-    color:black;
-    background-color: #eb8df3;
+    color:white;
+    background-color:pink;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -193,9 +193,6 @@ summary{
 }
 .next:hover{
     background-color: lavender;
-}
-.footer #Average:hover{
-    background-color: beige;
 }
 .footer #Average1:hover{
     background-color: beige;
