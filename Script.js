@@ -40,6 +40,7 @@ window.addEventListener("load",()=>{
 
        console.log("urlsearchdata:" + urlsearch);
        document.getElementById('input').value='';
+
        localStorage.setItem('search',place);
    }
 
@@ -139,9 +140,9 @@ window.addEventListener("load",()=>{
 
    }
    //prediction average of a day by hour
-   const average=((forecast.list[0].main.temp+forecast.list[1].main.temp+forecast.list[2].main.temp+forecast.list[3].main.temp+forecast.list[4].main.temp+forecast.list[5].main.temp+forecast.list[6].main.temp+forecast.list[7].main.temp))/8;
-           const weather_hourly_avg=document.getElementById("Average-hour");
-           weather_hourly_avg.innerText= 'Average of hourly prediction for today is: ' +Math.floor(average-273)+ ' °C' ;
+   const average1=((forecast.list[0].main.temp+forecast.list[1].main.temp+forecast.list[2].main.temp+forecast.list[3].main.temp+forecast.list[4].main.temp+forecast.list[5].main.temp+forecast.list[6].main.temp+forecast.list[7].main.temp))/8;
+           const weather_hourly_avg=document.getElementById("Average1");
+           weather_hourly_avg.innerText= 'Average of hourly prediction for today is: ' +Math.floor(average1-273)+ ' °C' ;
           
 }
 
@@ -169,5 +170,6 @@ window.addEventListener("load",()=>{
            div.appendChild(description);
            document.querySelector('.weekF').appendChild(div)
        }
+       
 
    }
