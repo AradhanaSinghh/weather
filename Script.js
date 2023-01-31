@@ -40,6 +40,7 @@ window.addEventListener("load",()=>{
 
        console.log("urlsearchdata:" + urlsearch);
        document.getElementById('input').value='';
+       localStorage.setItem('search',place);
    }
 
 //    function to check weeatherReport details ****
@@ -168,9 +169,5 @@ window.addEventListener("load",()=>{
            div.appendChild(description);
            document.querySelector('.weekF').appendChild(div)
        }
-       //prediction average of a 5 day
-       const average=((forecast.list[0].main.temp+forecast.list[1].main.temp+forecast.list[2].main.temp+forecast.list[3].main.temp+forecast.list[4].main.temp))/5;
-           const weather_day_avg=document.getElementById("Average");
-           weather_day_avg.innerText= 'Average of temperature for 5 days is: ' +Math.floor(average-273)+ ' °C' ;
 
    }
