@@ -170,14 +170,10 @@ summary{
 .desc{
     color: rgb(192, 13, 228);
 }
-#Average{
+
+#Average-hour{
     color:black;
-    background-color: #4788dd;
-    border: 2px solid black;
-}
-#Average1{
-    color:black;
-    background-color: #c860d1;
+    background-color: #eb8df3;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
